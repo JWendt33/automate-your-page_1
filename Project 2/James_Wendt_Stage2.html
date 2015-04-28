@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<head>
+  <title>Jimmy's Notes</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="Jimmy-Style.css">
+</head>
+<body>
+  <div class="TOC">
+    <h1>Table of Contents</h1>
+    <ol>
+      <li><a href="#lesson-1">Lesson 1: The Basics of the Web and HTML</a>
+        <ul>
+          <li><a href="#lesson1-1">Where to begin</a></li>
+          <li><a href="#lesson1-2">Major pieces of the web</a></li>
+          <li><a href="#lesson1-3">HTML = HyperText Markup Language</a></li>
+          <li><a href="#lesson1-4">HTML Markup</a></li>
+          <li><a href="#lesson1-5">5 most important take-aways from Lesson 1</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-2">Lesson 2: Web Pages, Documents, and Structure</a>
+        <ul>
+          <li><a href="#lesson2-1">How do websites work?</a></li>
+          <li><a href="#lesson2-2">Everything is a Box!</a></li>
+          <li><a href="#lesson2-3">Boxes within boxes within boxes...</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-3">Lesson 3: Adding CSS Style to HTML Structure</a>
+        <ul>
+          <li><a href="#lesson3-1">Avoiding Repetition</a></li>
+          <li><a href="#lesson3-2">The Wonders of CSS</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-4">Lesson 4: Intro to Serious Programming</a>
+        <ul>
+          <li><a href="#lesson4-1">What is Computer Science?</a></li>
+          <li><a href="#lesson4-2">Computers versus Most Machines</a></li>
+          <li><a href="#lesson4-3">Programming Languages</a></li>
+          <li><a href="#lesson4-4">Grammar</a></li>
+          <li><a href="#lesson4-5">Python Expressions</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-5">Lesson 5: Variables & Strings</a>
+        <ul>
+          <li><a href="#lesson5-1">What is a variable?</a></li>
+          <li><a href="#lesson5-2">What does it mean to assign a value to a variable?</a></li>
+          <li><a href="#lesson5-3">What is the difference between what the "=" means in math vs. in programming?</a></li>
+          <li><a href="#lesson5-4">Why would variables be useful?</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-6">Lesson 6: Input > Function > Output</a>
+        <ul>
+          <li><a href="#lesson6-1">What is a function?</a></li>
+          <li><a href="#lesson6-2">What is the difference between making and using a function?</a></li>
+          <li><a href="#lesson6-3">How do programmers use functions to avoid repetition?</a></li>
+          <li><a href="#lesson6-4">What happens if a function doesn't have a return statement?</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-7">Lesson 7: Control Flow and Loops</a>
+        <ul>
+          <li><a href="#lesson7-1">'If' Statements</a></li>
+          <li><a href="#lesson7-2">'While' Loops</a></li>
+          <li><a href="#lesson7-3">Solving Problems</a></li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+  <h1>Udacity Lessons</h1>
+  <div class="lesson">
+    <h2 id= "lesson-1">Lesson 1: The Basics of the Web and HTML</h2>  
+    <div class="takeaway" id="lesson1-1">
+      <div class="takeaway-title">
+        Where to begin
+      </div>
+      <div class="takeaway-description">
+        <p>The worldwide web is a collection of HTML docs. The links between these pages is what makes the web <em>web-like</em>.</p>
+      </div>
+    </div>
+    <div class="takeaway" id="lesson1-2">
+      <div class="takeaway-title">
+        Major pieces of the web
+      </div>
+      <div class="takeaway-description">
+        <p>
+          You: a person.
+        </p>  
+        <p>
+          Your Computer: <a href="http://en.wikipedia.org/wiki/Personal_computer"> probably this</a>.
+        </p>
+        <p>
+          Web Browser: A program that runs on your computer to display files found on the web.
+        </p>
+        <p>
+          The Internet: The world's largest computer network. Invented by <a href="https://breakingbird.files.wordpress.com/2014/11/al-gore.jpg"> Al Gore</a>.
+        </p> 
+        <p>
+          Servers: Computers that host the files that make up the web
+        </p>
+        <p>
+          HTTP - the main protocol of the web
+        </p>    
+       </div>  
+     </div>
+     <div class="takeaway" id="lesson1-3">
+      <div class="takeaway-title">
+        HTML = HyperText Markup Language
+      </div>
+      <div class="takeaway-description"> 
+       <p>
+         It's considered the heart of the web. It's made up of: 
+       </p>
+       <p>
+         <b>Text content</b>: what you see
+       </p>
+       <p> 
+         <b>Markup</b>: what it looks like
+       </p>
+       <p> 
+         <b>References to documents</b>: e.g. images + videos
+       </p>
+       <p> 
+         <b>Links to other pages</b>: <a href="https://www.udacity.com">Like this!</a>
+       </p>  
+      </div>  
+     </div>
+     <div class="takeaway" id="lesson1-4">
+      <div class="takeaway-title"> 
+        HTML Markup
+      </div>
+      <div class="takeaway-description"> 
+       <p>
+         HTML markup consists of opening tags, closing tags, and contents. All of that combines into an "element." Here is a link to a <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444">video</a> that discusses this in more detail. 
+       </p>
+       <p>
+         Elements can either be <em>in-line</em> or <em>block</em>.  Block elements create an "invisible box" around the content that sits inside ofthem.
+       </p>
+      </div>
+     </div>
+     <div class="takeaway" id="lesson1-5">
+      <div class="takeaway-title"> 
+        5 most important take-aways from Lesson 1
+      </div>
+      <div class="takeaway-description"> 
+       <p>
+         1. What a web page is: A web page is a text document written in a language known as HTML. Our web browsers then read, interpret, and display these documents.
+       </p> 
+       <p>
+         2. How coding works: Coding involves writing text in a language that a computer can understand. The computer then follows the instructions written by the programmer.
+       </p>
+       <p>
+         3. Programmers must write their code using the proper syntax, otherwise the computer will not be able to understand it.
+       </p>
+       <p>
+         4. Programmers can’t remember everything: There are too many details and variations to keep everything in your head. It's more important to understand the broad strokes. You can actually google lots of specific things rather than trying to memorize them.
+       </p> 
+       <p>
+         5. Basic HTML vocabulary: A <b>tag</b> is contained within angled brackets. Most tags have what are known as an opening tag and a closing tag. However, some tags do not need a closing tag. They're known as “<b>void</b>” tags. An HTML <b>element</b> refers to everything within a set of opening and closing tags. An <b>attribute</b> is a property of an HTML element.
+        </p>
+      </div>
+     </div>
+  </div>
+  <div class="lesson">
+    <h2 id= "lesson-2">Lesson 2: Web Pages, Documents, and Structure</h2>
+    <div class="takeaway" id="lesson2-1">
+      <div class="takeaway-title">
+        How do websites work?
+      </div>
+      <div class="takeaway-description"> 
+        <p>
+          - You can think of a website much like your house.
+        </p> 
+        <p>
+          - <b>HTML</b> files are the <b>structure</b>. Where your wall is placed. What room is your living room, what room is your kitchen, etc.
+        </p>
+        <p>
+          - <b>CSS</b> files are the <b>style</b>. What color is your carpeting? What decorations do you have up? What color is the wall?
+        </p>
+        <p>
+          - <b>Javascript</b> files are your <b>interactive</b> components. Your garage door opener or your television remote. They’re changing some element of your house
+        </p> 
+      </div>  
+    </div>
+    <div class="takeaway" id="lesson2-2">
+      <div class="takeaway-title">
+        Everything is a Box!
+      </div> 
+      <div class="takeaway-description">
+        <p>
+          Everything on a web page is actually a box. It gets changed using style. When you start to accept that everything is a box, you can begin to visualize this to move items around on the page.Always sketch out the boxes to better understand how the web page is structured. Start with the big boxes and work backward from there. Even really accomplished programmers do this :)
+        </p>
+      </div>
+    </div>
+    <div class="takeaway" id="lesson2-3">
+      <div class="takeaway-title">
+        Boxes within boxes within boxes...
+      </div> 
+      <div class="takeaway-description">
+        <p>
+          HTML uses what some refer to as a "tree-like structure" for its documents. That is to say that elements can be placed inside other elements. Tree-like structures are used in a variety of disciplines to bring some sort of hierarchy to things. When you view an HTML page in a web browser, this tree-like structure manifests itself as a bunch of "nested" boxes. For a better visual example, take a look at this <a href="https://s-media-cache-ak0.pinimg.com/736x/30/cd/a4/30cda4a8b3dbbd18dafefd94573176d2.jpg">work of art</a>, in which Bob Ross is painting a picture of Rick Ross, who is painting a picture of Ross from <em>Friends</em>, who is painting a picture of Bob Ross and so on and so forth.  
+        </p>
+        <p>
+          When viewing actual HTML code, you can get a sense of this tree-like structure by keeping an eye out for all of the indents on the left side of the screen. The more indented an element is, the more nested it is. 
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="lesson">
+    <h2 id= "lesson-3">Lesson 3: Adding CSS Style to HTML Structure</h2>
+    <div class="takeaway" id="lesson3-1">
+      <div class="takeaway-title">
+        Avoiding Repetition
+      </div>
+      <div class="takeaway-description"> 
+        <p>
+          When we talk about avoiding repetition, we're talking about not having to manually rewrite code over and over and over again. This is important because it helps us avoid errors and make changes to our document more efficiently.
+        </p>
+        <p>
+          It's pretty easy to overlook something. So, if we decide to make a change to our code, it's easy to  forget to make that change in every location that the repeated code appears.
+        </p>
+        <p>
+          We're also able to save time by not manually rewriting code. Just like Andy, I want each "lesson" on this page to have the same style. Rather than manually apply that style to each lesson, I can give each lesson "div" the same "class" then apply one style to that class. The style will then show up for each lesson. 
+        </p>
+      </div>
+    </div>
+    <div class="takeaway" id="lesson3-2">
+      <div class="takeaway-title">
+        The Wonders of CSS
+      </div>
+      <div class="takeaway-description"> 
+        <p>
+          Cascading Style Sheets, more commonly known as CSS, allow us to make changes to the style of HTML elements. CSS enables us to control things like font size, color, background color, borders, margins, and much more. When we want to apply the same style to a bunch of related elements, we can give those elements a "class" and then apply style to that class.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="lesson">
+    <h2 id= "lesson-4">Lesson 4: Introduction to "Serious" programming</h2>
+    <div class="takeaway" id="lesson4-1">
+      <div class="takeaway-title">
+        What is Computer Science?
+      </div>
+      <div class="takeaway-description"> 
+        <p>
+          Computer Science is about solving problems by breaking them down into smaller pieces and then providing a detailed sequence of steps that could be used to solve each piece. Those steps can then be executed by a computer!
+        </p>
+      </div>
+    </div>
+    <div class="takeaway" id="lesson4-2">
+      <div class="takeaway-title">
+        Computers vs. Most Machines
+      </div>
+      <div class="takeaway-description"> 
+        <p>
+          Most machines can only do one thing, or maybe just a few things. A toaster, for example, can toast stuff. That's basically it. However, a <b>computer</b> can do anything. It is a universal machine that we can program to do anything. 
+        </p>
+        <p>
+          To program a computer to do something, we must provide it with a <em>precise sequence of steps</em> that it can follow. A computer by itself can't do anything. It has a small group of functions that it can execute. It's up to us to provide it with the exact steps we want it to take, if we want it to do anything cool. 
+        </p>
+      </div>
+    </div>
+    <div class="takeaway" id="lesson4-3">
+      <div class="takeaway-title">
+        Programming Lanuages
+      </div>
+      <div class="takeaway-description"> 
+        <p>
+          A programming language refers to what we will use to tell a computer what to do. What we'll be using is a language called <b>Python</b>. Python is actually known as an interpreter. This means that when we write a program in Python, it interprets what we wrote and then runs the program in a way that the computer can understand. 
+        </p>
+      </div>
+    </div>
+    <div class="takeaway" id="lesson4-4">
+      <div class="takeaway-title">
+        Grammar
+      </div>
+      <div class="takeaway-description"> 
+        <p>
+          Just like any language, programming languages have a specific <a href="http://www.xxlmag.com/wp-content/uploads/2013/06/nelly_country.jpg">grammar</a> to them. Whereas in English, I could write with incorrect grammar and you'd still probably understand what I'm saying, this is not the case with computers. Computers need us to write programs with exactly correct grammar, otherwise they can't do the cool things we want them to. This is that whole <b>technological empathy</b> thing we keep hearing about.
+        </p>
+      </div>
+    </div>
+    <div class="takeaway" id="lesson4-5">
+      <div class="takeaway-title">
+        Python Expressions
+      </div>
+      <div class="takeaway-description"> 
+        <p>
+          Python expressions follow specific grammatical rules. Although they can begin at a high level as a combination of non-terminals, we must get more granular until each piece of the expression is a terminal. 
+        </p>
+        <p>
+          For example: An Expression can be formed by combining an Expression with an Operator followed by an Expression. However, before it can be a legal Python statement, you need to break it down into a combination of terminals such as 1 + 1.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="lesson">
+    <h2 id= "lesson-5">Lesson 5: Variables & Strings</h2>
+    <div class="takeaway" id="lesson5-1">
+      <div class="takeaway-title">
+        What is a variable?
+      </div>
+      <div class="takeaway-description"> 
+        <p>
+          A variable allows programmers to give names to values. We can then manipulate those variables to produce different values. 
+        </p>
+      </div>
+    </div>
+    <div class="takeaway" id="lesson5-2">
+      <div class="takeaway-title">
+        What does it mean to assign a value to a variable?
+      </div>
+      <div class="takeaway-description"> 
+        <p>
+          Let's say we have a variable called <b>Jimmy_Variable</b>. If we then write the following code:
+        </p>  
+        <p>
+          Jimmy_Variable = 33
+        </p>
+        <p>
+          Now whenever we write Jimmy_Variable, it will actually refer to the value "33"
+        </p>
+      </div>
+    </div>
+    <div class="takeaway" id="lesson5-3">
+      <div class="takeaway-title">
+        What is the difference between what the "=" means in math versus in programming. 
+      </div>
+      <div class="takeaway-description"> 
+        <p>
+          The equal sign does not mean equal. It really is like an arrow. It means "Assignment." Put whatever the right side evaluates to into the name on the left side. 
+        </p>
+      </div>
+    </div>
+    <div class="takeaway" id="lesson5-4">
+      <div class="takeaway-title">
+        Why would variables be useful?
+      </div>
+      <div class="takeaway-description"> 
+        <p>
+          Variables are useful for a number of reasons. First of all, they can make code more readable by letting us use names that make sense to humans. Additionally, they allow us to store the value of important data. They also make it easier for us to make changes to values. 
+        </p>
+      </div>
+    </div>
+  </div>
+<div class="lesson">
+    <h2 id= "lesson-6">Lesson 6: Input > Function > Output</h2>
+    <div class="takeaway" id="lesson6-1">
+      <div class="takeaway-title">
+        What is a function?
+      </div>
+      <div class="takeaway-description"> 
+        <p>
+          A function has 3 pieces: 
+          <p>
+            1. An input
+          </p>
+          <p>
+            2. Some set of things that get done to that input
+          </p>
+          <p>
+            3.  An output
+          </p>
+          <p>
+            A function can best be exemplified by the <a href="http://upload.wikimedia.org/wikipedia/en/d/dd/Gnomes_plan.png">underpants gnomes</a> and their quest to make profits off of stealing underpants. Their input was underpants. Their output was profit. However, they never defined what they needed to do to the underpants to make a profit. Similarly, a function only works if you define what you want done to the input to create an output. 
+        </p>
+      </div>
+    </div>
+    <div class="takeaway" id="lesson6-2">
+      <div class="takeaway-title">
+        What is the difference between <b>making</b> and <b>using</b> a function?
+      </div>
+      <div class="takeaway-description"> 
+        <p>
+          You make a function by beginning with the word <span class="code">def</span> then typing the name of the function followed by the parameters of the function within parentheses. This is followed by the "body" of the function. In the body, you write what you actually want done to the input parameters. As an example, you may write something for a function called <span class="code">square</span>:
+        </p>
+        <div class="code-block">
+          def square(x): <br>
+          <span class="indent">answer = x * x</span> <br>
+          <span class="indent">return answer</span>
+        </div>  
+        <p>
+          When you're ready to use your function, you simply place a value in for the parameter and then bingo bango:
+        </p>
+        <div class="code-block">
+          print square(8) <br>
+          >>> 64
+        </div> 
+      </div>
+    </div>
+    <div class="takeaway" id="lesson6-3">
+      <div class="takeaway-title">
+        How do do programmers use functions to avoid repetition?
+      </div>
+      <div class="takeaway-description"> 
+        <p>
+          Functions can be reused forever and ever. Although we haven't quite learned how to do it yet, we will eventually be able to use functions to recreate HTML code and not have to manually rewrite it each time.
+        </p>
+      </div>
+    </div>
+    <div class="takeaway" id="lesson6-4">
+      <div class="takeaway-title">
+        What happens if a function doesn't have a return statement?
+      </div>
+      <div class="takeaway-description"> 
+        <p>
+          If a function doesn't have a return statement, then the computer won't know what to produce. For example, if you do the following: 
+        </p>
+        <div class="code-block">
+          def square(x): <br>
+          <span class="indent">answer = x * x</span> <br><br>
+          
+          print square(4) <br>
+          >>> None
+        </div>
+        <p>
+          You'll get nothing.
+      </div>
+    </div>
+  </div>
+  <div class="lesson">
+    <h2 id= "lesson-7">Lesson 7: Control Flow and Loops</h2>
+    <div class="takeaway" id="lesson7-1">
+        <div class="takeaway-title">
+          'If' Statements    
+        </div>
+        <div class="takeaway-description">
+          'If' statements allow us to specify a range of possible actions to take on an input, 
+          which could then change the output. This is useful since it can enable us to make our code do 
+          something different based on some comparison that is made. It gives us a lot more flexibility 
+          and is a building block for creating more complex programs.
+        </div>
+    </div> 
+    <div class="takeaway" id="lesson7-2">
+        <div class="takeaway-title">
+            'While' Loops    
+        </div>
+        <div class="takeaway-description">
+            'While' Loops allow us to write code that does the same thing over and over. This is 
+            particularly useful for when you're dealing with a list or string containing many elements. Rather than
+            have to write a ton of code to individually act upon elements, a 'while' loop will let you do the 
+            same thing to each element. This is particularly useful for automating this very web page. 
+        </div>
+    </div> 
+    <div class="takeaway" id="lesson7-3">
+        <div class="takeaway-title">
+            Solving Problems    
+        </div>
+        <div class="takeaway-description">
+            Perhaps the biggest takeaway from Stage 2 is the general approach we have been taught to
+            solving problems. Solving a programming problem really requires you to break that bigger problem down 
+            into smaller, simpler problems. By doing so, you're able to take really complex ideas, and create
+            code that solves them. 
+        </div>
+    </div> 
+  </div>  
+</body>
+
+</html>
