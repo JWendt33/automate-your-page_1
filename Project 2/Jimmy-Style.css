@@ -1,0 +1,48 @@
+body {
+  padding: 20px 15px;
+	font-family: Arial;
+	max-width: 2000px;
+	margin: 0 auto; 
+	font-size: 1.5em;
+}
+h1 {
+	text-align: center;
+	color: #000047;
+}
+h2 {
+	margin: 10px;
+}
+p {
+	margin: 20px 0;
+}
+ul {
+	list-style-type: none;
+}
+li {
+	font-size: 22px;
+	line-height: 44px;
+}
+.lesson {
+	background-color: #000047;
+	border-radius: 8px;
+	color: white;
+	padding: 10px;
+	margin: 10px auto;
+}
+.takeaway {
+	background-color: #F0FFFF;
+	padding: 4px;
+	margin: 8px;
+	border-radius: 2px;
+	color: black;
+}
+.takeaway-title {
+  font-size: 30px;
+	margin: 8px;
+	text-align: center;
+	color: #000047;
+}
+.takeaway-description {
+	font-weight: lighter;
+	margin: 6px;
+}
